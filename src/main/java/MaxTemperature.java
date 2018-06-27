@@ -15,6 +15,11 @@ public class MaxTemperature {
             System.err.println("Usage: MaxTemperature <input path> <output path>");
             System.exit(-1);
         }
+		//启用map任务输出gzip压缩格式的数据
+//        Configuration conf = new Configuration();
+//        conf.setBoolean(Job.MAP_OUTPUT_COMPRESS, true);
+//       conf.setClass(Job.MAP_OUTPUT_COMPRESS_CODEC, GzipCodec.class, CompressionCodec.class);
+//		Job job = new Job(conf);
         Job job = new Job();
         job.setJarByClass(MaxTemperature.class);
         job.setJobName("Max Temperature");
