@@ -1,6 +1,5 @@
 package AvroTemperatureFinal;
 
-import Avro.StringPairFromFile;
 import org.apache.avro.Schema;
 import org.apache.avro.file.DataFileReader;
 import org.apache.avro.generic.GenericDatumReader;
