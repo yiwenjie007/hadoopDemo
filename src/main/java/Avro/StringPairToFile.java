@@ -14,7 +14,7 @@ public class StringPairToFile {
 
     public static void main(String[] args) throws IOException {
         Schema.Parser parser = new Schema.Parser();
-        Schema schema = parser.parse(StringPair.class.getResourceAsStream("StringPair.avsc"));
+        Schema schema = parser.parse(StringPairToFile.class.getResourceAsStream("StringPair.avsc"));
         //写数据到文件
         GenericRecord datum = new GenericData.Record(schema);
         datum.put("left", "L");
