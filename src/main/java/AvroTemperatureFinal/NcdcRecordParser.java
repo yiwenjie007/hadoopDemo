@@ -11,13 +11,7 @@ public class NcdcRecordParser {
 
     private static final int MISSING_TEMPERATURE = 9999;
 
-
-
-    private static final DateFormat DATE_FORMAT =
-
-            new SimpleDateFormat("yyyyMMddHHmm");
-
-
+    private static final DateFormat DATE_FORMAT =new SimpleDateFormat("yyyyMMddHHmm");
 
     private String stationId;
 
@@ -32,8 +26,6 @@ public class NcdcRecordParser {
     private boolean airTemperatureMalformed;
 
     private String quality;
-
-
 
     public void parse(String record) {
 
