@@ -1,0 +1,2 @@
+compile('redis.clients:jedis:2.9.0')
+compile('com.taipu:redis:0.0.13-SNAPSHOT')
